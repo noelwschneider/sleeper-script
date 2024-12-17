@@ -1,0 +1,24 @@
+get user
+- GET https://api.sleeper.app/v1/user/<username>
+- GET https://api.sleeper.app/v1/user/<user_id>
+* 880274751057379328
+
+
+avatar url
+- https://sleepercdn.com/avatars/thumbs/<avatar_id>
+
+
+get all leagues for user
+- GET https://api.sleeper.app/v1/user/<user_id>/leagues/<sport>/<season>
+
+
+specific league
+- GET https://api.sleeper.app/v1/league/<league_id>
+
+
+league rosters
+- GET https://api.sleeper.app/v1/league/<league_id>/rosters
+
+
+league users
+- GET https://api.sleeper.app/v1/league/<league_id>/users
