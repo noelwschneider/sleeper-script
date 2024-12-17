@@ -30,7 +30,7 @@ async function getLeaguesForUser(user, year) {
 
 
 async function getAvatar(avatarId) {
-    const url = `https://sleepercdn.com/avatars/thumbs/${id}`;
+    const url = `https://sleepercdn.com/avatars/thumbs/${avatarId}`;
     try {
       const response = await fetch(url);
       if (!response.ok) {
@@ -45,7 +45,7 @@ async function getAvatar(avatarId) {
 
 
 async function getLeague(leagueId) {
-    const url = `https://api.sleeper.app/v1/league/${id}`;
+    const url = `https://api.sleeper.app/v1/league/${leagueId}`;
     try {
       const response = await fetch(url);
       if (!response.ok) {
@@ -60,7 +60,7 @@ async function getLeague(leagueId) {
 
 
 async function getRosters(leagueId) {
-    const url = `https://api.sleeper.app/v1/league/${id}/rosters`;
+    const url = `https://api.sleeper.app/v1/league/${leagueId}/rosters`;
     try {
       const response = await fetch(url);
       if (!response.ok) {
@@ -75,7 +75,7 @@ async function getRosters(leagueId) {
 
 
 async function getUsers(leagueId) {
-    const url = `https://api.sleeper.app/v1/league/${id}/users`;
+    const url = `https://api.sleeper.app/v1/league/${leagueId}/users`;
     try {
       const response = await fetch(url);
       if (!response.ok) {
@@ -90,7 +90,7 @@ async function getUsers(leagueId) {
 
 
 async function getMatchups(leagueId, week) {
-    const url = `https://api.sleeper.app/v1/league/${id}/matchups/${week}`;
+    const url = `https://api.sleeper.app/v1/league/${leagueId}/matchups/${week}`;
     try {
       const response = await fetch(url);
       if (!response.ok) {
@@ -105,7 +105,7 @@ async function getMatchups(leagueId, week) {
 
 
 async function getTransactions(leagueId, week) {
-    const url = `https://api.sleeper.app/v1/league/${id}/transactions/${week}`;
+    const url = `https://api.sleeper.app/v1/league/${leagueId}/transactions/${week}`;
     try {
       const response = await fetch(url);
       if (!response.ok) {
