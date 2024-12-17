@@ -1,3 +1,7 @@
+docs
+- https://docs.sleeper.com/#user
+
+
 get user
 - GET https://api.sleeper.app/v1/user/<username>
 - GET https://api.sleeper.app/v1/user/<user_id>
@@ -22,3 +26,35 @@ league rosters
 
 league users
 - GET https://api.sleeper.app/v1/league/<league_id>/users
+
+
+league matchups
+- GET https://api.sleeper.app/v1/league/<league_id>/matchups/<week>
+
+
+transactions
+- GET https://api.sleeper.app/v1/league/<league_id>/transactions/<round>
+
+
+state
+- GET https://api.sleeper.app/v1/state/<sport>
+
+
+all league drafts
+- GET https://api.sleeper.app/v1/league/<league_id>/drafts
+
+
+specific draft
+- GET https://api.sleeper.app/v1/draft/<draft_id>
+
+
+draft picks
+- GET https://api.sleeper.app/v1/draft/<draft_id>/picks
+
+
+traded picks
+- GET https://api.sleeper.app/v1/draft/<draft_id>/traded_picks
+
+
+players USE SPARINGLY
+- GET https://api.sleeper.app/v1/players/nba
